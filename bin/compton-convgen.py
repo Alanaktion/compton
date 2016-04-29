@@ -39,7 +39,7 @@ def mdumpcompton(matrix):
 		for j in range(width):
 			if int(height / 2) == i and int(width / 2) == j:
 				continue;
-			print(format(matrix[i][j], ".6f"), end = ",")
+			print(format(matrix[i][j], ".6f").rstrip('0').rstrip('.'), end = ",")
 	print()
 
 def mnormalize(matrix):
